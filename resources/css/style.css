@@ -1,0 +1,202 @@
+
+/******** Common ********/
+
+	body {
+	  font-family: "Helvetica Neue",
+	    Arial,
+	    "Hiragino Kaku Gothic ProN",
+	    "Hiragino Sans",
+	    Meiryo,
+	    sans-serif;
+	}
+
+	.clickable {
+		cursor: pointer;
+	}
+	.clickable:hover {
+		opacity: 0.8;
+	}
+	.clickable:active {
+		opacity: 0.6;
+	}
+
+/******** Initialize ********/
+
+	#header,
+	#navigation,
+	#content,
+	.posts,
+	.post,
+	#footer {
+		float: left;
+		width: 100%;
+		overflow: hidden;
+		box-sizing: border-box;
+	}
+
+	#header,
+	#navigation,
+	#footer {
+		background-color: #000;
+	}
+
+/******** Per Area ********/
+
+	#container {
+		width: 100%;
+		overflow: hidden;
+		margin: 0 auto;
+	}
+
+	#header {
+		padding: 20px;
+	}
+
+		#siteTitle {
+			display: inline-block;
+			float: left;
+			overflow: hidden;
+			margin: 0 0 5px 0;
+		}
+
+			#siteTitle a {
+				font-size: 36px;
+				color: #fff;
+				text-decoration: none;
+			}
+
+		#siteSubTitle {
+			float left;
+			clear: left;
+			margin: 0;
+			font-size: 13px;
+			font-weight: normal;
+			color: #fff;
+		}
+
+	#navigation ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+		#navigation li {
+			float: left;
+			width: 120px;
+			overflow: hidden;
+			border-right: 1px solid #666;
+		}
+
+			#navigation li a {
+				display: block;
+				width: 100%;
+				height: 30px;
+				line-height: 30px;
+				cursor: pointer;
+				color: #fff;
+				text-decoration: none;
+				text-align: center;
+			}
+			#navigation li a:hover {
+				background-color: #222;
+			}
+			#navigation li a:active {
+				background-color: #333;
+			}
+
+	#content {
+		padding: 40px 40px 80px 40px;
+	}
+
+		#contentImage {
+			float: right;
+			width: 40%;
+			overflow: hidden;
+			border-radius: 5px;
+		}
+
+			#contentImage img {
+				float: left;
+				width: 100%;
+			}
+
+		#contentTitle {
+			display: inline-block;
+			float: left;
+			margin: 0;
+			font-size: 32px;
+		}
+
+		#contentDescription {
+			float: left;
+			clear: left;
+			overflow: hidden;
+			width: 50%;
+			max-width: 600px;
+			margin: 10px 0 0 0;
+		}
+
+		.posts {
+			float: left;
+			border-radius: 5px;
+			background-color: #eee;
+			padding: 0 40px 40px 40px;
+			margin: 40px 0 0 0;
+		}
+
+			.post {
+				float: left;
+				border-radius: 5px;
+				background-color: #ddd;
+				padding: 0 40px 40px 40px;
+				margin-top: 40px;
+				vertical-align: top;
+			}
+
+				.postImage {
+					float: right;
+					clear: right;
+					width: 38%;
+					overflow: hidden;
+					border-radius: 5px;
+					margin: 40px 0 0 0;
+				}
+
+					.postImage img {
+						float: left;
+						width: 100%;
+					}
+
+				.postTitle {
+					display: inline-block;
+					float: left;
+					margin: 40px 0 0 0;
+					font-size: 24px;
+				}
+
+				.postDescription {
+					float: left;
+					clear: left;
+					overflow: hidden;
+					width: 50%;
+					max-width: 600px;
+					margin: 10px 0 0 0;
+				}
+
+	#footer {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		height: 36px;
+		line-height: 36px;
+	}
+
+		#copyright {
+			margin: 0;
+			font-size: 14px;
+			font-weight: normal;
+			color: #fff;
+			text-decoration: none;
+			text-align: center;
+		}
+

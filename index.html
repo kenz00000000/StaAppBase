@@ -1,0 +1,90 @@
+<!--#include virtual="includes/structure/head.html"-->
+<!--#include virtual="includes/structure/header.html"-->
+<!--#include virtual="includes/structure/navigation.html"-->
+			<style>
+				html,body {
+					height: 100%;
+				}
+				#container {
+					height: 100%;
+					background-image: url('includes/pages/home/img/bg.jpg');
+					background-size: 100% auto;
+				}
+				#header {
+					position: absolute;
+					top: 30px;
+					left: 0;
+					background: none;
+					padding: 40px;
+				}
+				#navigation ul {
+					float: right;
+					width: auto;
+					border-left: 1px solid #666;
+				}
+				.homeBtn {
+					background-color: #fff;
+					color: #000 !important;
+				}
+				.homeBtn:hover,
+				.homeBtn:active {
+					background-color: #fff !important;
+				}
+				#content {
+					position: absolute;
+					bottom: 0;
+					left: 0;
+				}
+				#contentDescription {
+					font-size: 14px;
+					font-weight: normal;
+					color: #fff;
+				}
+				.posts {
+					position: absolute;
+					top: 40px;
+					right: 40px;
+					width: 500px;
+					background-color: rgba(0,0,0,0.5);
+					padding: 0 20px 20px 20px;
+				}
+				.post {
+					border-bottom: 1px solid #666;
+					background: none;
+					padding: 0 0 20px 0;
+					margin: 20px 0 0 0;
+				}
+				.postTitle,
+				.postImage {
+					margin-top: 0;
+				}
+				.postTitle,
+				.postDescription {
+					color: #fff;
+				}
+				.news
+			</style>
+			<script>
+
+				$('.homeBtn').hide();
+
+				$(function(){
+					$(".postDescription").css({
+						'width': '20ch',
+						'font-family': '"Courier New", Consolas, monospace',
+						'white-space': 'nowrap',
+						'text-overflow': 'ellipsis'
+					});
+				});
+
+			</script>
+			<div id="content">
+				<p id="contentDescription">This photo was taken on the "Shinnase Beach" coast on June 24, 2020.</p>
+			</div><!--// #content -->
+			<div class="posts">
+				<!--#include virtual="includes/pages/news/1/index.html"-->
+				<!--#include virtual="includes/pages/news/2/index.html"-->
+				<!--#include virtual="includes/pages/news/3/index.html"-->
+			</div><!--// .posts -->
+<!--#include virtual="includes/structure/footer.html"-->
+<!--#include virtual="includes/structure/foot.html"-->
